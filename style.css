@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+:root {
+    --paleblue : hsl(243, 100%, 93%);
+    --grayishblue: hsl(229, 7%, 55%);
+    --darkblue : hsl(228, 56%, 26%);
+    --verydarkblue : hsl(229, 57%, 11%);
+}
+
+body {
+    background-repeat: no-repeat;
+    background-image: url(images/bg-mobile.png);
+    background-size: cover ;
+}
+
+main {
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+}
+
+.container {
+    width: 400px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.firstcard {
+    background-color: var(--darkblue);
+    padding: 50px;
+    border-radius: 15px 100px 15px 15px;
+}
+
+.logo {
+    padding-bottom: 30px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+.document {
+    border: 15px solid var(--verydarkblue);
+    border-radius: 10px;
+}
+
+.folder {  
+    border: 15px solid var(--verydarkblue);
+    border-radius: 10px;  
+}
+
+.upload {
+    border: 15px solid var(--verydarkblue);
+    border-radius: 10px;  
+}
+
+.secondcard {
+    background-color: var(--darkblue);
+    color: white;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+.secondcard p {
+    color: rgba(245, 240, 240, 0.8);
+}
+
+.stat {
+    width: 100%;
+    height: 20px;
+    margin: 0 auto;
+    background-color: var(--verydarkblue);
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+}
+
+.color  {
+    background-image: linear-gradient(hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 200px;
+    height: 15px;
+    border-radius: 20px;
+    margin-left: 3px;
+    margin-right: auto;
+}
+
+.ball {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    margin-right: 0;
+    margin-left: auto;
+    border-radius: 50%;
+
+}
+
+.num {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.used {
+    text-align: center;
+}
+
+.secondcard {
+    border-radius: 15px;
+}
+
+
+
+.thirdcard {
+    background-color: white;
+    width: 50%;
+    border-radius: 15px;
+    margin: -50px;
+    margin-left: 25%;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.text h1 {
+    padding-right: 10px;
+    font-size: 40px;
+}
+
+.text p {
+    font-size: 14px;
+    color: var(--grayishblue);
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 1000px) {
+    .container {
+        display: flex;
+        width: 1000px;
+    }
+
+    .thirdcard {
+        margin-left: -250px;
+        width: 200px;
+        height: fit-content;
+        
+    }
+
+    .secondcard {
+        width: 50%;
+    }
+    
+    .firstcard {
+        margin-right: 30px;
+    }
+    
+}
